@@ -79,10 +79,15 @@ p {
   margin-bottom: 5px;
 }
 
-table {
+/* table {
   width: 100%;
   border-collapse: collapse;
   margin: 10px;
+}
+ */
+table {
+  width: 100%; /* Already there */
+  max-width: 100vw; /* Set maximum width to viewport width */
 }
 
 th, td {
