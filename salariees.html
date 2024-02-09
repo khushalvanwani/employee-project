@@ -1,0 +1,45 @@
+`<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Filter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  
+  <link rel="stylesheet" href="salariees.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Employee Filter</h1>
+    <div class="filter-bar">
+      <input type="text" id="departmentInput" placeholder="Enter department name">
+      <button onclick="filterEmployees()">Filter</button>
+    </div>
+    <div id="filteredEmployees"></div>
+    <div class="add-employee">
+      <h2>Add Employee</h2>
+      <input type="text" id="newEmployeename" placeholder="Name">
+      <input type="text" id="newEmployeeaddress" placeholder="Address">
+      <input type="text" id="newEmployeenumber" placeholder="Employee Number">
+      <input type="text" id="newEmployeesalary" placeholder="Salary">
+      <input type="text" id="newDepartment" placeholder="Department">
+      <button onclick="addEmployee()">Add</button>
+    </div>
+    <table id="employeeTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Employee Number</th>
+            <th>Salary</th>
+            <th>Department</th>
+          </tr>
+        </thead>
+        <tbody>
+          </tbody>
+      </table>
+  </div>
+  <script src="salariees.js"></script>
+</body>
+</html>
+
