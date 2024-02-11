@@ -12,12 +12,15 @@ body {
 }
  
 .container {
-  max-width: 500px; 
+  max-width: 500px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin: auto; 
-} 
+  margin: auto;
+  display: flex;
+  flex-direction: column; /* Ensures children stack vertically */
+  align-items: center; /* Aligns children horizontally */
+}
 
 
 h1 {
