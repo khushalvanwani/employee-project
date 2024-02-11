@@ -95,10 +95,13 @@ table {
 
 th, td {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 6px;
   text-align: left;
 }
+/* Existing CSS styles */
 
-th {
-  background-color: #f2f2f2;
-}
+/* Add this media query */
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 14px; /* Decrease font size */
+  }
